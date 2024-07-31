@@ -1,0 +1,109 @@
+.title {
+  font-family: $secondary-font;
+  font-size: 62px;
+  line-height: 62px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4px;
+  }
+
+  &--xxl {
+    font-family: $secondary-font;
+    font-size: 48px;
+    line-height: 54px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0;
+
+    @media (min-width: $desktop-width) {
+      font-size: 82px;
+      line-height: 96px;
+    }
+  }
+
+  &--xl {
+    font-family: $secondary-font;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+
+    @media (min-width: $tablet-width) {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 54px;
+      line-height: 54px;
+    }
+  }
+
+  &--l {
+    font-family: $primary-font;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+
+  &--m {
+    font-family: $primary-font;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  &--s {
+    font-family: $primary-font;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+}

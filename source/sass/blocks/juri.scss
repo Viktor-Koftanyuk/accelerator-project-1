@@ -1,0 +1,193 @@
+.juri {
+  padding: 41px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+.juri .container {
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 104px;
+    position: relative;
+  }
+}
+
+.juri__title {
+  text-align: center;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.juri .title {
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.juri__swiper .juri__swiper-wrapper .juri__swiper-slide {
+  width: 260px;
+}
+
+.juri__swiper-picture {
+  position: relative;
+  background-color: $color-basis;
+}
+
+.juri__additional-info {
+  opacity: 0;
+  color: $color-accent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 46px 50px 50px;
+  position: absolute;
+  background-color: rgba(16, 38, 84, 0.89);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity 0.2s ease-in-out;
+  max-width: 260px;
+}
+
+.juri__swiper-box:hover .juri__additional-info,
+.juri__swiper-box:focus .juri__additional-info {
+  opacity: 1;
+}
+
+.juri__swiper-box:hover h3,
+.juri__swiper-box:focus h3 {
+  opacity: 0;
+}
+
+.juri__additional-info h4 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.juri__additional-info p {
+  margin: 0;
+  color: #b6bdcc;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 34px;
+}
+
+.juri__additional-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.juri__additional-info ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.juri__swiper-box {
+  width: 260px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.juri__swiper-box h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  color: $color-accent;
+  margin: 0;
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $desktop-width) {
+    min-width: 130px;
+  }
+}
+
+.juri__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: absolute;
+    top: 56%;
+    z-index: 11;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+  }
+
+  &--prev {
+    left: 34px;
+  }
+
+  &--next::before {
+    transform: rotate(180deg);
+  }
+
+  &--next {
+    right: 35px;
+  }
+}
+
+.juri__button::before {
+  content: "";
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  mask-image: url("/__spritemap#sprite-arrowL-view");
+  mask-size: 23px 35px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #102654;
+}
+
+.juri__button-prev,
+.juri__button-next {
+  background-color: inherit;
+  border: none;
+}
+
+.juri__button-prev::after,
+.juri__button-next::after {
+  color: $color-basis;
+}
+
+
+.juri__button:hover {
+  outline: 1px solid $color-basis;
+}
+
+.juri__button:focus {
+  outline: 1px solid $color-basis;
+  background-color: #e8e8e8;
+}
+
+.juri__button:active {
+  background-color: $color-basis;
+}
+
+.juri__button:active::before {
+  background-color: $color-accent;
+}

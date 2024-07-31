@@ -1,0 +1,238 @@
+.reviews {
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+.reviews .container {
+  padding: 0 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 134px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 403px;
+  }
+}
+
+.reviews .title--xl {
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.reviews__title {
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
+.reviews__swiper-slide {
+  background-color: $offers;
+  color: $color-accent;
+}
+
+.reviews-picture {
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background: $color-accent;
+}
+
+.reviews-picture img {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.swiper-wrapper .reviews__swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 25px;
+  padding-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px 30px;
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px;
+    gap: 30px;
+  }
+}
+
+.reviews__wrapper-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    max-width: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 330px;
+  }
+}
+
+.reviews__wrapper-text h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.reviews__wrapper-text p {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 325px;
+  }
+}
+
+.reviews__wrapper-text p br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__wrapper-text p br:nth-child(2) {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.reviews__wrapper-text p br:first-child {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__button {
+  display: none;
+  border: none;
+  background-color: inherit;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: absolute;
+    top: 56%;
+    z-index: 11;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 60%;
+  }
+
+  &--prev {
+    left: 27px;
+
+    @media (min-width: $desktop-width) {
+      left: 282px;
+    }
+  }
+
+  &--next {
+    right: 29px;
+
+    @media (min-width: $desktop-width) {
+      right: 282px;
+    }
+  }
+}
+
+.reviews__button::before {
+  content: "";
+  width: 23px;
+  height: 35px;
+  mask-image: url("/__spritemap#sprite-arrowL-view");
+  mask-size: 23px 35px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #102654;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.reviews__button--next::before {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.reviewsreviews__button-prev,
+.reviewsreviews__button-next {
+  background-color: inherit;
+  border: none;
+}
+
+.reviews__button-prev::after,
+.reviews__button-next::after {
+  color: $color-basis;
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
+}
+
+
+.reviews__button:hover {
+  outline: 1px solid $color-basis;
+}
+
+.reviews__button:focus {
+  outline: 1px solid $color-basis;
+  background-color: $shadow-number;
+}
+
+.reviews__button:active {
+  background-color: $color-basis;
+
+  &::before {
+    background-color: $color-accent;
+  }
+}

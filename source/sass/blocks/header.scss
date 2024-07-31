@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 0 12px;
+  }
+}
+
+.header__link {
+  text-decoration: none;
+  color: $color-accent;
+  padding: 16px 0 18px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 12px 0 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 0 16px;
+  }
+}
+
+.header__link:hover {
+  color: #1c3374;
+  opacity: 0.5;
+  transition: color 0.2s ease-in;
+}
+
+.header__link:focus {
+  color: #1c3374;
+  outline: none;
+  transition: color 0.2s ease-in;
+}
+
+.header__link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  background-color: $color-basis;
+  opacity: 0;
+}
+
+.header__link:active {
+  color: $color-basis;
+  transition: color 0.2s ease-in-out;
+}
+
+.header__link:active::after {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}

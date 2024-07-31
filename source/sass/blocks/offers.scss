@@ -1,0 +1,250 @@
+.offers {
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+.offers__title {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.offers__transformation {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.offers__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 -15px 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.offers__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-accent;
+  background-color: $banner;
+  padding: 30px;
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 278px;
+    align-items: flex-start;
+    padding: 40px 25px;
+    min-height: 462px;
+    max-height: 462px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 45px;
+    min-height: 460px;
+    max-height: 460px;
+    min-width: 280px;
+  }
+}
+
+.offers__box h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
+    margin-left: 1px;
+  }
+}
+
+.offers__box span {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 40px;
+  }
+}
+
+.offers__box p {
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 18px;
+  padding: 0 43px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    margin-bottom: 151px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 147px;
+  }
+}
+
+.offers__box a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 0 5px;
+  color: $color-accent;
+  border-bottom: 1px solid $color-accent;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
+}
+
+.offers__box a:hover {
+  opacity: 0.8;
+}
+
+.offers__box a:focus {
+  outline: 1px solid $color-accent;
+  border: none;
+}
+
+.offers__box a:active {
+  opacity: 0.8;
+}
+
+.offers__wrapper-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.offers__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 7px solid;
+  border-image-source: linear-gradient(to bottom right, #d10a42 0%, #00359f 100%);
+  border-image-slice: 1;
+  padding: 21px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 560px;
+  }
+}
+
+.offers__card h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: $offers;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+}
+
+.offers__card p {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    margin-bottom: 21px;
+    min-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 7px;
+  }
+}
+
+.offers__card p br {
+  display: none;
+}
+
+.offers__card a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 0 4px;
+  color: $offers;
+  border-bottom: 1px solid $offers;
+}
+
+.offers__card a:hover {
+  opacity: 0.8;
+}
+
+.offers__card a:focus {
+  outline: 1px solid $offers;
+  border-bottom: 1px solid $offers;
+}
+
+.offers__card a:active {
+  outline: none;
+}

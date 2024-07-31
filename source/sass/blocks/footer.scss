@@ -1,0 +1,148 @@
+.footer {
+  padding: 40px 0;
+  background-color: $dark;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0 33px;
+  }
+}
+
+.footer .container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer .logo {
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 18px 16px;
+  margin-bottom: 28px;
+  margin-left: -10px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    gap: 11px;
+    margin-top: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.footer__link {
+  padding: 7px 10px;
+  color: $color-accent;
+  text-decoration: none;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 36px;
+  }
+}
+
+.footer__link::after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  right: 25%;
+  bottom: 5px;
+  position: absolute;
+  background-color: $color-accent;
+  opacity: 0;
+}
+
+.footer__link:hover::after {
+  opacity: 1;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+  }
+}
+
+.footer__social-link {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: $color-accent;
+  border-radius: 50%;
+}
+
+.footer__social-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $dark;
+}
+
+.footer__social-link--vk::before {
+  mask-image: url("../__spritemap#sprite-vk-view");
+  mask-size: 13.89px 13.89px;
+}
+
+.footer__social-link--ok::before {
+  mask-image: url("../__spritemap#sprite-ok-view");
+  mask-size: 13.89px 13.89px;
+}
+
+.footer__social-link--reddit::before {
+  mask-image: url("../__spritemap#sprite-reddit-view");
+  mask-size: 13.89px 13.89px;
+}
+
+.footer__social-link:hover {
+  background-color: #74819c;
+}
+
+.footer__social-link:hover::before {
+  background-color: $color-accent;
+}
+
+.footer__social-link:focus {
+  background-color: $price-number;
+}
+
+.footer__social-link:focus::before {
+  background-color: $color-accent;
+}
+
+.footer__social-link:active {
+  background-color: $color-basis;
+}
+
+.footer__social-link:active::before {
+  background-color: $color-accent;
+}

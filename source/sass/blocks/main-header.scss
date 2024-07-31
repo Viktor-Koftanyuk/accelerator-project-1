@@ -1,0 +1,12 @@
+.main-header {
+  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+  color: $color-accent;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 73px;
+  }
+}
