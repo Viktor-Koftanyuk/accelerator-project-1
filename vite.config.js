@@ -65,7 +65,7 @@ export default {
   build: {
     outDir: '../dist',
   },
-  base: './',
+  base: './fitnessDeploy',
   server: {
     port: 3000,
   }
